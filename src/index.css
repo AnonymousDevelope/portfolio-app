@@ -1,0 +1,206 @@
+/*-- header qism uchun --*/
+body {
+  overflow-x: hidden; }
+
+.basis-shadow {
+  background-color: rgba(188, 186, 171, 0.2) !important;
+  -webkit-box-shadow: 0px 10px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2); }
+  .basis-shadow .col-md-4:last-child .form {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+    .basis-shadow .col-md-4:last-child .form input, .basis-shadow .col-md-4:last-child .form textarea {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 12px;
+      caret-color: #59CBE8;
+      box-shadow: none !important;
+      border-bottom: 1px solid #59CBE8 !important; }
+    .basis-shadow .col-md-4:last-child .form textarea {
+      resize: none; }
+
+.header-box {
+  margin: 0 auto !important;
+  background-color: rgba(188, 186, 171, 0.2) !important;
+  -webkit-box-shadow: 0px 10px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2); }
+  .header-box .col-md-4:last-child .form {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+    .header-box .col-md-4:last-child .form input, .header-box .col-md-4:last-child .form textarea {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 12px;
+      caret-color: #59CBE8;
+      box-shadow: none !important;
+      border-bottom: 1px solid #59CBE8 !important; }
+    .header-box .col-md-4:last-child .form textarea {
+      resize: none; }
+  .header-box .admin-navabar li:hover {
+    scale: 1.1; }
+    .header-box .admin-navabar li:hover a {
+      color: #59CBE8; }
+    .header-box .admin-navabar li:hover i {
+      animation-name: none !important; }
+  .header-box .navbar-toggler {
+    border: none; }
+
+@media screen and (max-width: 765px) {
+  .admin-navabar {
+    margin-left: 20px !important; }
+    .admin-navabar li:hover {
+      scale: 1.01 !important;
+      transition: 0.2s; }
+      .admin-navabar li:hover a {
+        color: #59CBE8; } }
+@media screen and (max-width: 847px) {
+  .login {
+    width: 68px;
+    font-size: 11px !important; }
+
+  .logout {
+    width: 74px;
+    font-size: 11px !important; } }
+/*-- Main qism uchun scss kodlar --*/
+.main {
+  height: 30rem !important;
+  overflow: hidden; }
+  .main .title_content {
+    position: absolute;
+    left: 40% !important;
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px; }
+  .main .home {
+    height: 30rem !important;
+    margin-top: 5%; }
+  .main .about {
+    height: 30rem !important;
+    margin-top: 5%;
+    overflow-y: auto;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .main .about::-webkit-scrollbar {
+      width: 0px; }
+    .main .about::-webkit-scrollbar-track {
+      background: #f1f1f1; }
+    .main .about::-webkit-scrollbar-thumb {
+      background: #888; }
+    .main .about::-webkit-scrollbar-thumb:hover {
+      background: #555; }
+  .main .form {
+    margin-top: 5%;
+    width: 35%; }
+    .main .form input[type="text"]::placeholder,
+    .main .form input[type="password"]::placeholder {
+      color: #59CBE8;
+      text-transform: capitalize;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic; }
+    .main .form input[type="text"] .input-group,
+    .main .form input[type="password"] .input-group {
+      height: 30px !important; }
+
+@media screen and (max-width: 750px) {
+  .main .title_content {
+    left: 30% !important; } }
+@media screen and (max-width: 765px) {
+  .main .form input[type="text"],
+  .main .form input[type="password"] {
+    width: 100% !important; } }
+/*Footer Design*/
+footer .title {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #59CBE8; }
+footer .icons .col-md:hover {
+  scale: 1.2;
+  transition: linear all; }
+  footer .icons .col-md:hover:first-child:hover {
+    color: #00bfff; }
+  footer .icons .col-md:hover:nth-child(2):hover {
+    color: #0072b1; }
+  footer .icons .col-md:hover:nth-child(3):hover {
+    color: #ed812b; }
+  footer .icons .col-md:hover:nth-child(4):hover {
+    color: #3b5998; }
+  footer .icons .col-md:hover:nth-child(5):hover {
+    color: #883434; }
+  footer .icons .col-md:hover:nth-child(6):hover {
+    color: #25D366; }
+footer .info {
+  border-bottom: 0.5px solid rgba(188, 186, 171, 0.2);
+  padding: 20px; }
+footer .footerForm input, footer .footerForm textarea {
+  color: #59CBE8 !important;
+  text-transform: transparent;
+  text-indent: 15px; }
+
+@media screen and (max-width: 780px) {
+  footer .icons .col-md {
+    display: flex;
+    flex-direction: row;
+    width: calc(100%/6); } }
+.load {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: all 1s linear;
+  color: #59CBE8; }
+  .load .loader {
+    left: 0;
+    position: relative;
+    width: 50%;
+    height: 50px;
+    border: 0.1px solid #59CBE8;
+    border-radius: 2rem; }
+    .load .loader::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 25%;
+      height: 100%;
+      border-radius: 2rem;
+      background: linear-gradient(to left top, #59CBE8, lime);
+      animation: loaderInfinity alternate 0.7s linear infinite; }
+
+.contact .form input[name="email"]::placeholder {
+  color: #59CBE8;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; }
+.contact .form textarea::placeholder {
+  color: #59CBE8;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; }
+
+.block {
+  transition: all 1s linear;
+  opacity: 0; }
+
+@keyframes loaderInfinity {
+  from {
+    transform: translateX(0%); }
+  to {
+    transform: translateX(300%); } }
+
+/*# sourceMappingURL=index.css.map */

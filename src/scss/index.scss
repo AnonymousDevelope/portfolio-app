@@ -1,0 +1,343 @@
+//base color
+/*-- header qism uchun --*/
+$primary: #59CBE8;
+
+body {
+    overflow-x: hidden;
+}
+
+@mixin basis-shadow() {
+    background-color: rgba(188, 186, 171, 0.2) !important;
+    -webkit-box-shadow: 0px 10px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    .col-md-4:last-child{
+        .form{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            input,textarea{
+                width: 95%;
+                margin: 0 auto;
+                margin-top: 12px;
+                caret-color: $primary;
+                box-shadow: none!important;
+                border-bottom: 1px solid $primary!important;
+            }
+            textarea{
+                resize: none;
+            }
+        }
+    }
+}
+
+.basis-shadow {
+    @include basis-shadow();
+}
+
+.header-box {
+    margin: 0 auto !important;
+    @include basis-shadow();
+
+    .admin-navabar {
+        li:hover {
+            scale: 1.1;
+
+            a {
+                color: $primary;
+            }
+
+            i {
+                animation-name: none !important;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+}
+
+@mixin media($width, $fontsize) {
+    width: $width;
+    font-size: $fontsize !important;
+}
+
+@media screen and (max-width:765px) {
+    .admin-navabar {
+        margin-left: 20px !important;
+
+        li:hover {
+            scale: 1.01 !important;
+            transition: 0.2s;
+
+            a {
+                color: $primary;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:847px) {
+    .login {
+        @include media(68px, 11px);
+    }
+
+    .logout {
+        @include media(74px, 11px);
+    }
+
+}
+
+/*-- Main qism uchun scss kodlar --*/
+.main {
+    height: 30rem !important;
+    overflow: hidden;
+    
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // for home window in main
+    //const classes
+    .title_content {
+        position: absolute;
+        left: 40% !important;
+        position: absolute;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        font: {
+            weight: bold;
+            size: 20px
+        }
+
+        ;
+    }
+
+    .home {
+        height: 30rem !important;
+        margin-top: 5%;
+    }
+
+    // for about window in main
+    .about {
+        height: 30rem !important;
+        margin-top: 5%;
+        overflow-y: auto;
+
+        // scroll-behavior: smooth;
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+
+    //for form in main
+    .form {
+        // align-items: center!important;
+        // margin-top: auto;
+        margin-top: 5%;
+        width: 35%;
+
+        input[type="text"],
+        input[type="password"] {
+            &::placeholder {
+                color: $primary;
+                text-transform: capitalize;
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+            }
+
+            .input-group {
+                height: 30px !important;
+            }
+
+            // width: 58% !important;
+        }
+    }
+}
+
+//main media screen
+@media screen and (max-width:750px) {
+    .main {
+        .title_content {
+            left: 30% !important;
+        }
+    }
+}
+
+//
+@media screen and (max-width:765px) {
+    .main {
+        .form {
+
+            input[type="text"],
+            input[type="password"] {
+                width: 100% !important;
+                ;
+            }
+        }
+    }
+}
+
+/*Footer Design*/
+footer {
+    .title {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 4px;
+        font-size: 20px;
+        font-weight: bold;
+        border-bottom: 1px solid $primary;
+    }
+
+    .icons {
+        .col-md {
+            &:hover {
+                // margin-top: -10px;
+                scale: 1.2;
+                transition: linear all;
+
+                &:first-child:hover {
+                    color: #00bfff;
+                }
+
+                &:nth-child(2):hover {
+                    color: #0072b1;
+                }
+
+                &:nth-child(3):hover {
+                    color: #ed812b;
+                }
+
+                &:nth-child(4):hover {
+                    color: #3b5998;
+                }
+                &:nth-child(5):hover {
+                    color: rgba(136, 52, 52, 1);
+                }
+                &:nth-child(6):hover {
+                    color: #25D366;
+                }
+                
+            }
+        }
+    }
+
+    .info {
+        border-bottom: .5px solid rgba(188, 186, 171, 0.2);
+        padding: 20px;
+    }
+    @mixin footerForm(){
+        color: $primary !important;
+        text-transform: transparent;
+        text-indent: 15px;
+    }
+    .footerForm {
+        input,textarea{
+          @include footerForm();
+
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+    footer {
+        .icons {
+            .col-md {
+                display: flex;
+                flex-direction: row;
+                width: calc(100%/6);
+            }
+        }
+    }
+}
+
+//Loader Window Style
+.load {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: all 1s linear;
+    color: $primary;
+
+    .loader {
+        // color: #59CBE8;
+        left: 0;
+        position: relative;
+        width: 50%;
+        height: 50px;
+        border: .1px solid $primary;
+        border-radius: 2rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 25%;
+            height: 100%;
+            border-radius: 2rem;
+            background: linear-gradient(to left top, $primary, lime);
+            animation: loaderInfinity alternate 0.7s linear infinite;
+        }
+    }
+}
+//contact window css
+.contact{
+    .form{
+        input[name="email"]::placeholder{
+            color: $primary;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        textarea::placeholder{
+            color: $primary;
+            text-transform: capitalize;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+    }
+}
+.block {
+    transition: all 1s linear;
+    opacity: 0;
+}
+
+@keyframes loaderInfinity {
+    from {
+        // left: 0;
+        transform: translateX(0%);
+    }
+
+    to {
+        // left: 0;
+        transform: translateX(300%);
+    }
+}

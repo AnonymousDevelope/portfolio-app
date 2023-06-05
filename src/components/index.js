@@ -1,0 +1,11 @@
+export { default as Header } from './header/header'
+export { default as App } from './app/app'
+export { Main,FIO } from './main/main'
+export { default as Footer } from './footer/footer'
+export { default as Loader } from './loader/loader'
+export { default as Home } from './home/home'
+export { default as About } from './about/about'
+export { default as Contact } from './contact/contact'
+export { default as Price } from './price/price'
+export { default as Admin } from './adminstration/admin'
+
