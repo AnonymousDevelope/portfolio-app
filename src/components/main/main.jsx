@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+localStorage.setItem("name","Hayojon")
 class Main extends Component {
   constructor() {
     super();
