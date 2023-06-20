@@ -1,0 +1,17 @@
+[33mcommit 144f7e7417f84d78382712093bbfb26c25a725ba[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Your Name <you@example.com>
+Date:   Tue Jun 20 11:32:57 2023 +0500
+
+    add new key to localstorage
+
+[33mcommit 03bf78f922917747dc9fa09a5bf4dcf418a01279[m
+Author: Your Name <you@example.com>
+Date:   Tue Jun 20 11:17:01 2023 +0500
+
+    Change author
+
+[33mcommit 73b1f78e983ac212acf68d3aa2edb9d1b38722b6[m
+Author: Your Name <you@example.com>
+Date:   Mon Jun 5 09:53:38 2023 +0500
+
+    portfolio app
